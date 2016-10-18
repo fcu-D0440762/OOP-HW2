@@ -5,7 +5,8 @@ public class StringComparator {
 	public static void main(String[] args) {
 		
 		String str1, str2 ;
-		
+		boolean index;
+		do{
 		System.out.println("Enter a string 1 :") ;
 		Scanner scanner1 = new Scanner(System.in);
 		str1 = scanner1.nextLine();
@@ -15,14 +16,8 @@ public class StringComparator {
 		str2 = scanner2.nextLine() ;
 		
 		
-		
-		if((str1.toUpperCase()).equals(str2.toUpperCase())){
-			System.out.println("The two strings are the same.") ;
-			
-		}else{
-			System.out.println("The two strings are not the same.") ;
-		}
-
+		index = !(str1.toUpperCase()).equals(str2.toUpperCase());
+		}while(index);
 		
 		
 		
